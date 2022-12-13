@@ -145,3 +145,14 @@ body { margin: 0; font: 16px/1.3 sans-serif; }
 	color: rgba(0,0,0,0.8);
 	text-decoration: none;
 }
+
+.map{
+	display:flex;
+	align-items:center; 
+	justify-content:center;
+}
+
+.mapj{
+	width:100%;
+	height:auto;
+}
