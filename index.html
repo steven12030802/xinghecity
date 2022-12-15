@@ -128,7 +128,31 @@
             + second;
         document.write(nowTime);
     </script>
+
+
+<!-- 服务器状态检测代码 -->
+        <div class="server-status">
+            当前服务器状态： <span class="server-online"></span>!
+        </div>
+
+        <script src="https://mcapi.us/scripts/minecraft.min.js"></script>
+        <script>
+            MinecraftAPI.getServerStatus('play.xinghecity.xyz', {
+                port: 37023 // optional, only if you need a custom port
+            }, function (err, status) {
+                if (err) {
+                    return document.querySelector('.server-status').innerHTML = 'Error loading status';
+                }
+
+                // you can change these to your own message!
+                document.querySelector('.server-online').innerHTML = status.online ? '服务器运行状态正常' : '服务器已关闭';
+            });
+        </script>
+
+
+
     </div>
+
 
     <!-- 页脚 -->
     <nav class="navbar navbar-default navbar-fixed-bottom">
