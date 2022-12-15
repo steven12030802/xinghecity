@@ -1,7 +1,15 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\announce",
+    "\\ban",
+    "\\info",
+    "\\report",
+    "\\src",
+    "\\src\\fonts",
+    "\\src\\js",
+    "\\subway"
   ],
-  "SelectedNode": "\\C:\\Users\\王炳权\\Source\\Repos\\xinghecity",
+  "SelectedNode": "\\info\\index.html",
   "PreviewInSolutionExplorer": false
 }
