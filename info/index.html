@@ -36,12 +36,12 @@
                 <ul class="nav navbar-nav">
                     <li><a href="../index.html">主页</a></li>
                     <li><a href="../subway/index.html">星河城轨道交通</a></li>
-                    <li><a href="../report/index.html">申诉/举报</a></li>
+                    <li class="active"><a href="../report/index.html">申诉/举报</a></li>
                     <li><a href="../ban/index.html">封禁相关</a></li>
                     <li><a href="https://dnyyfb.github.io/">工作室网站</a></li>
                     <li><a href="https://space.bilibili.com/606741691/">B站首页</a></li>
                     <li><a href="#">概况</a></li>
-                    <li class="active"><a href="../announce/index.html">公告</a></li>
+                    <li><a href="../announce/index.html">公告</a></li>
                     <li><a href="https://voice.baidu.com/act/newpneumonia/newpneumonia">抗击疫情</a></li>
                     <li><a href="../info/index.html">服务器实时信息</a></li>
                 </ul>
@@ -60,14 +60,41 @@
             </div>
         </div>
         <br>
-        <div class="panel panel-default">
-            <div class="panel-heading">
-                公告栏
-            </div>
-            <div class="panel-body">
-                <p>暂无公告</p>
-            </div>
+        <div class="">
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <span>申诉通道</span>
+                </div>
+                <div class="panel-body">
+                    <div class="server-status">
+                        My awesome server is currently <span class="server-online"></span>!
+                    </div>
 
+                    <script src="https://mcapi.us/scripts/minecraft.min.js"></script>
+                    <script>
+                        MinecraftAPI.getServerStatus('play.xinghecity.xyz', {
+                            port: 37023 // optional, only if you need a custom port
+                        }, function (err, status) {
+                            if (err) {
+                                return document.querySelector('.server-status').innerHTML = 'Error loading status';
+                            }
+
+                            // you can change these to your own message!
+                            document.querySelector('.server-online').innerHTML = status.online ? 'up' : 'down';
+                        });
+                    </script>
+                    <img src="https://mcapi.us/server/image?ip=play.xinghecity.xyz&port=37023" alt="服务器在线状况图片">
+                </div>
+            </div>
+            <br>
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <span>举报通道</span>
+                </div>
+                <div class="panel-body">
+                    <p>星河城是一个和谐的Minecraft的服务器，如果您在游戏中发现协管、玩家或者服主做出了违反星河城服务器总规的行为，请按照下方的格式发送到我们的邮箱向我们举报，无关信息将会被管理员作屏蔽处理！感谢您的合作</p>
+                </div>
+            </div>
         </div>
     </div>
     <br>
@@ -95,7 +122,7 @@
         document.write(nowTime);
     </script>
     </div>
-
+    <br>
     <!-- 页脚 -->
     <nav class="navbar navbar-default navbar-fixed-bottom">
         <div class="container">
