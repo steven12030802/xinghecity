@@ -1,9 +1,9 @@
 {
   "ExpandedNodes": [
     "",
-    "\\announce",
-    "\\ban",
     "\\jianzhang",
+    "\\pdf",
+    "\\pdf\\星河城服务器总规",
     "\\src",
     "\\src\\css",
     "\\src\\css\\m",
@@ -11,6 +11,6 @@
     "\\src\\js",
     "\\subway"
   ],
-  "SelectedNode": "\\jianzhang\\index.html",
+  "SelectedNode": "\\pdf",
   "PreviewInSolutionExplorer": false
 }
