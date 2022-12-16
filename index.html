@@ -507,9 +507,9 @@
                     port: 37023
                 }, function (err, status) {
                     if (err) {
-                        return document.querySelector('.server-status').innerHTML = '服务器状态加载失败';
+                        return document.querySelector('.server-status').innerHTML = '状态加载失败';
                     }
-                    document.querySelector('.server-online').innerHTML = status.online ? '服务器运行状态正常' : '服务器已关闭';
+                    document.querySelector('.server-online').innerHTML = status.online ? '服务器运行正常' : '服务器已关闭';
                 });
             </script>
             <!-- 服务器状态检测代码结束 -->

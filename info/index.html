@@ -376,7 +376,7 @@
                 <!--服务器状态信息实时显示-->
                 <div class="panel-body">
                     <div class="server-status">
-                        服务器状态： <span class="server-online"></span>!
+                        当前服务器状态： <span class="server-online"></span>!
                     </div>
 
                     <script src="/src/js/minecraft.min.js"></script>
@@ -389,7 +389,7 @@
                             }
 
                             // you can change these to your own message!
-                            document.querySelector('.server-online').innerHTML = status.online ? '正常运行！' : '已关闭！';
+                            document.querySelector('.server-online').innerHTML = status.online ? '服务器运行正常!' : '服务器已关闭!';
                         });
                     </script>
                     <img src="https://mcapi.us/server/image?ip=play.xinghecity.xyz&port=37023" alt="服务器在线状况图片">
