@@ -5,18 +5,44 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="icon" sizes="82x82" href="../image/favicon.png">
-    <title>æ˜Ÿæ²³åŸæœåŠ¡å¹³å°</title>
-    <!-- æœ€æ–°ç‰ˆæœ¬çš„ Bootstrap æ–‡ä»¶ -->
+    <title>ĞÇºÓ³Ç·şÎñÆ½Ì¨</title>
+    <!-- ×îĞÂ°æ±¾µÄ Bootstrap ÎÄ¼ş -->
     <link rel="stylesheet" href="../src/css/bootstrap.min.css">
     <script src="../src/js/jquery-3.6.1.min.js"></script>
     <script src="../src/js/bootstrap.min.js"></script>
-    <!-- è‡ªå®šä¹‰æ ·å¼ -->
+    <!-- ×Ô¶¨ÒåÑùÊ½ -->
     <link rel="stylesheet" href="../src/css/index.css">
+    <style>
+        .container {
+            width: 1200px;
+            margin: 0 auto;
+        }
+
+        #myEcharts {
+            width: 900px;
+            height: 600px;
+            border: solid 1px red;
+            margin: 0 auto;
+        }
+    </style>
+    <script src="https://www.echartsjs.com/examples/vendors/jquery/jquery.js"></script>
+    <!-- ÒıÈë echarts.js -->
+    <script src="https://www.echartsjs.com/examples/vendors/echarts/echarts.min.js?_v_=1578305236132"></script>
+    <!--ÒıÈëÖĞ¹úµÄµØÍ¼Êı¾İjsÎÄ¼ş£¬ÒıÈëºó»á×Ô¶¯×¢²áµØÍ¼Ãû×ÖºÍÊı¾İ-->
+    <script src="https://www.echartsjs.com/examples/vendors/echarts/map/js/china.js?_v_=1578305236132"></script>
 </head>
 
 <body>
-    <!--é¼ æ ‡ç‰¹æ•ˆ
+
+   
+
+
+
+
+
+    <!--Êó±êÌØĞ§
     <script>
         function clickEffect() {
             let balls = [];
@@ -153,7 +179,7 @@
         }
         clickEffect();
     </script>
-    <!--æ¨±èŠ±ç‰¹æ•ˆ
+    <!--Ó£»¨ÌØĞ§
     <script>
         var stop, staticx;
         var img = new Image();
@@ -323,8 +349,8 @@
             }
         }
     </script>
-        -->
-    <!-- å¯¼èˆªæ  -->
+    -->
+    <!-- µ¼º½À¸ -->
     <nav class="navbar navbar-default navbar-fixed-top">
         <div class="container-fluid">
             <!-- Brand and toggle get grouped for better mobile display -->
@@ -336,81 +362,251 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="/">æ˜Ÿæ²³åŸæœåŠ¡å¹³å°</a>
+                <a class="navbar-brand" href="/">ĞÇºÓ³Ç·şÎñÆ½Ì¨</a>
             </div>
 
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav">
-                    <li><a href="../index.html">ä¸»é¡µ</a></li>
-                    <li><a href="../subway/index.html">æ˜Ÿæ²³åŸè½¨é“äº¤é€š</a></li>
-                    <li><a href="../report/index.html">ç”³è¯‰/ä¸¾æŠ¥</a></li>
-                    <li><a href="../ban/index.html">å°ç¦ç›¸å…³</a></li>
-                    <li><a href="https://dnyyfb.github.io/">å·¥ä½œå®¤ç½‘ç«™</a></li>
-                    <li><a href="https://space.bilibili.com/606741691/">Bç«™é¦–é¡µ</a></li>
-                    <li><a href="/jianzhang/index.html">è§„èŒƒå®ˆåˆ™</a></li>
-                    <li class="active"><a href="../announce/index.html">å…¬å‘Š</a></li>
-                    <li><a href="/covid-19/index.html">æŠ—å‡»ç–«æƒ…</a></li>
-                    <li><a href="../info/index.html">æœåŠ¡å™¨å®æ—¶ä¿¡æ¯</a></li>
+                    <li><a href="../index.html">Ö÷Ò³</a></li>
+                    <li><a href="../subway/index.html">ĞÇºÓ³Ç¹ìµÀ½»Í¨</a></li>
+                    <li><a href="../report/index.html">ÉêËß/¾Ù±¨</a></li>
+                    <li><a href="../ban/index.html">·â½ûÏà¹Ø</a></li>
+                    <li><a href="https://dnyyfb.github.io/">¹¤×÷ÊÒÍøÕ¾</a></li>
+                    <li><a href="https://space.bilibili.com/606741691/">BÕ¾Ê×Ò³</a></li>
+                    <li><a href="/jianzhang/index.html">¹æ·¶ÊØÔò</a></li>
+                    <li><a href="../announce/index.html">¹«¸æ</a></li>
+                    <li><a href="/covid-19/index.html">¿¹»÷ÒßÇé</a></li>
+                    <li class="active"><a href="../info/index.html">·şÎñÆ÷ÊµÊ±ĞÅÏ¢</a></li>
                 </ul>
 
             </div><!-- /.navbar-collapse -->
         </div><!-- /.container-fluid -->
     </nav>
 
-    <!-- ä¸»ä½“ -->
+    <!-- Ö÷Ìå -->
     <div class="container">
 
         <div class="row">
             <div class="text-center">
                 <img src="../image/favicon.png" alt="..." class="img-rounded" style="height: 40px;">
-                <h3 class="title">æ˜Ÿæ²³åŸæœåŠ¡å¹³å°</h3>
+                <h3 class="title">ĞÇºÓ³Ç·şÎñÆ½Ì¨</h3>
+            </div>
+        </div>
+        <br>
+        <div class="">
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <span>¿¹»÷ÒßÇé</span>
+                </div>
+
+                <div class="container">
+                    <h3>ÀÛ¼ÆÈ·ÕïÈËÊıÈçÏÂ£º</h3>
+                    <!--Îªecharts×¼±¸Ò»¸ödomÈİÆ÷-->
+                    <div id="myEcharts"></div>
+                </div>
+
+
+
+                <script>
+                    //³õÊ¼»¯echartsÊµÀı
+                    var myChart = echarts.init(document.getElementById('myEcharts'));
+                    // Ö¸¶¨Í¼±íµÄÅäÖÃÏîºÍÊı¾İ
+                    option = {
+                        title: {
+                            text: 'ÖĞ¹úÒßÇéÍ¼',
+                            left: 'center'
+                        },
+                        tooltip: {
+                            trigger: 'item'
+                        },
+                        legend: {
+                            orient: 'vertical',
+                            left: 'left',
+                            data: ['ÖĞ¹úÒßÇéÍ¼']
+                        },
+                        visualMap: {
+                            type: 'piecewise',
+                            pieces: [{
+                                min: 1000,
+                                max: 1000000,
+                                label: '´óÓÚµÈÓÚ1000ÈË',
+                                color: '#372a28'
+                            },
+                            {
+                                min: 500,
+                                max: 999,
+                                label: 'È·Õï500-999ÈË',
+                                color: '#4e160f'
+                            },
+                            {
+                                min: 100,
+                                max: 499,
+                                label: 'È·Õï100-499ÈË',
+                                color: '#974236'
+                            },
+                            {
+                                min: 10,
+                                max: 99,
+                                label: 'È·Õï10-99ÈË',
+                                color: '#ee7263'
+                            },
+                            {
+                                min: 1,
+                                max: 9,
+                                label: 'È·Õï1-9ÈË',
+                                color: '#f5bba7'
+                            },
+                            ],
+                            color: ['#E0022B', '#E09107', '#A3E00B']
+                        },
+                        toolbox: {
+                            show: true,
+                            orient: 'vertical',
+                            left: 'right',
+                            top: 'center',
+                            feature: {
+                                mark: {
+                                    show: true
+                                },
+                                dataView: {
+                                    show: true,
+                                    readOnly: false
+                                },
+                                restore: {
+                                    show: true
+                                },
+                                saveAsImage: {
+                                    show: true
+                                }
+                            }
+                        },
+                        roamController: {
+                            show: true,
+                            left: 'right',
+                            mapTypeControl: {
+                                'china': true
+                            }
+                        },
+                        series: [{
+                            name: 'È·ÕïÊı',
+                            type: 'map',
+                            mapType: 'china',
+                            roam: false,
+                            label: {
+                                show: true,
+                                color: 'rgb(249, 249, 249)'
+                            },
+                            data: []
+                        }]
+                    };
+
+                    //Ê¹ÓÃÖ¸¶¨µÄÅäÖÃÏîºÍÊı¾İÏÔÊ¾Í¼±í
+                    myChart.setOption(option);
+
+                    function getData() {
+                        $.ajax({
+                            url: "https://view.inews.qq.com/g2/getOnsInfo?name=disease_h5",
+                            dataType: "jsonp",
+                            success: function (data) {
+                                //  console.log(data.data)
+                                var res = data.data || "";
+                                res = JSON.parse(res);
+                                console.log(res);
+
+                                var newArr = [];
+                                //newArrµÄÊı¾İ¸ñÊ½Îª£º
+                                // [{
+                                //   name: '±±¾©11',
+                                //   value: 212
+                                // }, {
+                                //   name: 'Ìì½ò',
+                                //   value: 60
+                                // }]
+                                if (res) {
+                                    //»ñÈ¡µ½¸÷¸öÊ¡·İµÄÊı¾İ
+                                    var province = res.areaTree[0].children;
+                                    for (var i = 0; i < province.length; i++) {
+                                        var json = {
+                                            name: province[i].name,
+                                            value: province[i].total.confirm
+                                        }
+                                        newArr.push(json)
+                                    }
+                                    myChart.setOption({
+                                        series: [{
+                                            name: 'È·ÕïÊı',
+                                            type: 'map',
+                                            mapType: 'china',
+                                            roam: false,
+                                            label: {
+                                                show: true,
+                                                color: 'rgb(249, 249, 249)'
+                                            },
+                                            data: newArr
+                                        }]
+                                    });
+                                }
+                            }
+
+                        })
+                    }
+                    getData();
+                </script>
+
+
+
+
+
+
+
+
             </div>
         </div>
         <br>
         <div class="panel panel-default">
             <div class="panel-heading">
-                å…¬å‘Šæ 
+                <span>ÖÆ×÷&Î¬»¤ÈËÔ±Ãûµ¥</span>
             </div>
             <div class="panel-body">
-                <p>æš‚æ— å…¬å‘Š</p>
+                <p>PC_Jun¡¢mrBlack¡¢eRicky</p>
             </div>
-
         </div>
+    </div>
     </div>
     <br>
     <br>
     <div class="text-center">
-        å½“å‰æ—¶é—´ï¼š<span id="cg">2022/01/01 ä¸‹åˆ00:00:00</span>
+        µ±Ç°Ê±¼ä£º<span id="cg">2022/01/01 ÏÂÎç00:00:00</span>
         <script type="text/javascript">
             setInterval("cg.innerHTML=new Date().toLocaleString()", 1000);
         </script>
         <br>
         <script type="text/javascript">
-            var t = new Date();//è·å–å½“å‰æ—¶é—´
-            var year = t.getFullYear();//è·å–å½“å‰æ—¶é—´å¹´ä»½
-            var month = t.getMonth() + 1;//è·å–å½“å‰æ—¶é—´æœˆä»½
-            var day = t.getDate();//è·å–å½“å‰æ—¶é—´æ—¥
-            var week = t.getDay() - 1;//è·å–å½“å‰æ—¶é—´æ˜ŸæœŸ
-            var arr = new Array("æ˜ŸæœŸä¸€", "æ˜ŸæœŸäºŒ", "æ˜ŸæœŸä¸‰", "æ˜ŸæœŸå››", "æ˜ŸæœŸäº”", "æ˜ŸæœŸå…­", "æ˜ŸæœŸæ—¥",);
-            //ä¸Šè¡Œæ˜¯ä¸ºè§„åˆ’æ˜ŸæœŸçš„è¾“å‡º
-            //ä¸‹3è¡Œåˆ†åˆ«è·å¾—å½“å‰æ—¶é—´çš„æ—¶ åˆ† ç§’
+            var t = new Date();//»ñÈ¡µ±Ç°Ê±¼ä
+            var year = t.getFullYear();//»ñÈ¡µ±Ç°Ê±¼äÄê·İ
+            var month = t.getMonth() + 1;//»ñÈ¡µ±Ç°Ê±¼äÔÂ·İ
+            var day = t.getDate();//»ñÈ¡µ±Ç°Ê±¼äÈÕ
+            var week = t.getDay() - 1;//»ñÈ¡µ±Ç°Ê±¼äĞÇÆÚ
+            var arr = new Array("ĞÇÆÚÒ»", "ĞÇÆÚ¶ş", "ĞÇÆÚÈı", "ĞÇÆÚËÄ", "ĞÇÆÚÎå", "ĞÇÆÚÁù", "ĞÇÆÚÈÕ",);
+            //ÉÏĞĞÊÇÎª¹æ»®ĞÇÆÚµÄÊä³ö
+            //ÏÂ3ĞĞ·Ö±ğ»ñµÃµ±Ç°Ê±¼äµÄÊ± ·Ö Ãë
             var hour = t.getHours();
             var minute = t.getMinutes();
             var second = t.getSeconds();
-            var nowTime = "æ‚¨ä¸Šæ¬¡åˆ·æ–°çš„æ—¶é—´ï¼š" + year + "/" + month + "/" + day + " " + arr[week] + " " + hour + ((minute < 10) ? ":0" : ":") + minute + ((second < 10) ? ":0" : ":")
+            var nowTime = "ÄúÉÏ´ÎË¢ĞÂµÄÊ±¼ä£º" + year + "/" + month + "/" + day + " " + arr[week] + " " + hour + ((minute < 10) ? ":0" : ":") + minute + ((second < 10) ? ":0" : ":")
                 + second;
             document.write(nowTime);
         </script>
     </div>
-
-    <!-- é¡µè„š -->
+    <br>
+    <!-- Ò³½Å -->
     <nav class="navbar navbar-default navbar-fixed-bottom">
         <div class="container">
             <div class="text-center" style="color:#808069">
-                Copyright &copy2018-2022 ç”µè„‘èŒ All Right Reserved.
-                ç”µè„‘éŸ³ä¹å‘å¸ƒå·¥ä½œå®¤03å·ç½‘é¡µæœåŠ¡å™¨è¿è¡Œ|éƒ¨åˆ†ä»£ç ç”±ç¬”ç¨½èŒæä¾›<br>
-                <img src="../image/moeicon.png" alt="èŒICP" width="25px" height="25px"><a href="https://icp.gov.moe/?keyword=20210285" target="_blank">èŒICPå¤‡20210285å·</a>
+                Copyright &copy2018-2022 µçÄÔ¾ú All Right Reserved.
+                µçÄÔÒôÀÖ·¢²¼¹¤×÷ÊÒ03ºÅÍøÒ³·şÎñÆ÷ÔËĞĞ|²¿·Ö´úÂëÓÉ±Ê»ü¾úÌá¹©<br>
+                <img src="../image/moeicon.png" alt="ÃÈICP" width="25px" height="25px"><a href="https://icp.gov.moe/?keyword=20210285" target="_blank">ÃÈICP±¸20210285ºÅ</a>
                 <br>
                 <span id="lmao">
                     Powered by <a href="javascript:$(&#39;#lmao&#39;).html(&#39;Not powered by WordPress,Powered by Dnyyfb&#39;)">W0rdPress</a>
