@@ -1,8 +1,7 @@
 {
   "ExpandedNodes": [
     "",
-    "\\announce",
-    "\\ban",
+    "\\covid-19",
     "\\image",
     "\\info",
     "\\src",
@@ -12,6 +11,5 @@
     "\\src\\js",
     "\\subway"
   ],
-  "SelectedNode": "\\index.html",
   "PreviewInSolutionExplorer": false
 }
