@@ -3,6 +3,7 @@
     "",
     "\\announce",
     "\\ban",
+    "\\image",
     "\\info",
     "\\report",
     "\\src",
@@ -10,6 +11,6 @@
     "\\src\\js",
     "\\subway"
   ],
-  "SelectedNode": "\\info\\index.html",
+  "SelectedNode": "\\subway\\index.html",
   "PreviewInSolutionExplorer": false
 }

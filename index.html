@@ -23,7 +23,7 @@
             <!-- Brand and toggle get grouped for better mobile display -->
             <div class="navbar-header">
                 <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
-                    data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                        data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
                     <span class="sr-only">Toggle navigation</span>
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
@@ -36,7 +36,7 @@
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav">
                     <li class="active"><a href="#">主页</a></li>
-					<li><a href="subway/index.html">星河轨道交通</a></li>
+                    <li><a href="subway/index.html">星河轨道交通</a></li>
                     <li><a href="report/index.html">申诉/举报</a></li>
                     <li><a href="ban/index.html">封禁相关</a></li>
                     <li><a href="https://dnyyfb.github.io/">工作室网站</a></li>
@@ -49,6 +49,24 @@
             </div><!-- /.navbar-collapse -->
         </div><!-- /.container-fluid -->
     </nav>
+    <div class="deng-box">
+        <div class="deng">
+            <div class="xian"></div>
+            <div class="deng-a">
+                <div class="deng-b"><div class="deng-t">节</div></div>
+            </div>
+            <div class="shui shui-a"><div class="shui-c"></div><div class="shui-b"></div></div>
+        </div>
+    </div>
+    <div class="deng-box1">
+        <div class="deng">
+            <div class="xian"></div>
+            <div class="deng-a">
+                <div class="deng-b"><div class="deng-t">春</div></div>
+            </div>
+            <div class="shui shui-a"><div class="shui-c"></div><div class="shui-b"></div></div>
+        </div>
+    </div>
 
     <!-- 主体 -->
     <div class="container">
@@ -62,13 +80,13 @@
         <br>
 
         <div class="CSSgal">
-        
+
             <!-- Don't wrap targets in parent -->
             <s id="s1"></s>
             <s id="s2"></s>
             <s id="s3"></s>
             <s id="s4"></s>
-        
+
             <div class="slider">
                 <div style="background-image: url(image/xingherail.png);">
                     <h2>星河轨道交通</h2>
@@ -103,35 +121,35 @@
                 <a href="#s3">3</a>
                 <a href="#s4">4</a>
             </div>
-        
+
         </div>
 
     </div>
     <div class="text-center">
         当前时间：<span id="cg">2022/01/01 下午00:00:00</span>
-    <script type="text/javascript">
+        <script type="text/javascript">
             setInterval("cg.innerHTML=new Date().toLocaleString()", 1000);
-    </script>
-    <br>
-    <script type="text/javascript">
-        var t = new Date();//获取当前时间
-        var year = t.getFullYear();//获取当前时间年份
-        var month = t.getMonth() + 1;//获取当前时间月份
-        var day = t.getDate();//获取当前时间日
-        var week = t.getDay() - 1;//获取当前时间星期
-        var arr = new Array("星期一", "星期二", "星期三", "星期四", "星期五", "星期六", "星期日",);
-        //上行是为规划星期的输出
-        //下3行分别获得当前时间的时 分 秒 
-        var hour = t.getHours();
-        var minute = t.getMinutes();
-        var second = t.getSeconds();
-        var nowTime = "您上次刷新的时间：" + year + "/" + month + "/" + day + " " + arr[week] + " " + hour + ((minute < 10) ? ":0" : ":") + minute + ((second < 10) ? ":0" : ":")
-            + second;
-        document.write(nowTime);
-    </script>
+        </script>
+        <br>
+        <script type="text/javascript">
+            var t = new Date();//获取当前时间
+            var year = t.getFullYear();//获取当前时间年份
+            var month = t.getMonth() + 1;//获取当前时间月份
+            var day = t.getDate();//获取当前时间日
+            var week = t.getDay() - 1;//获取当前时间星期
+            var arr = new Array("星期一", "星期二", "星期三", "星期四", "星期五", "星期六", "星期日",);
+            //上行是为规划星期的输出
+            //下3行分别获得当前时间的时 分 秒
+            var hour = t.getHours();
+            var minute = t.getMinutes();
+            var second = t.getSeconds();
+            var nowTime = "您上次刷新的时间：" + year + "/" + month + "/" + day + " " + arr[week] + " " + hour + ((minute < 10) ? ":0" : ":") + minute + ((second < 10) ? ":0" : ":")
+                + second;
+            document.write(nowTime);
+        </script>
 
 
-<!-- 服务器状态检测代码开始 -->
+        <!-- 服务器状态检测代码开始 -->
         <div class="server-status">
             当前服务器状态： <span class="server-online"></span>!
         </div>
@@ -147,7 +165,7 @@
                 document.querySelector('.server-online').innerHTML = status.online ? '服务器运行状态正常' : '服务器已关闭';
             });
         </script>
-<!-- 服务器状态检测代码结束 -->
+        <!-- 服务器状态检测代码结束 -->
 
 
     </div>
@@ -156,14 +174,15 @@
     <!-- 页脚 -->
     <nav class="navbar navbar-default navbar-fixed-bottom">
         <div class="container">
-            <div class="text-center" style="color:#808069">Copyright &copy2018-2022 电脑菌 All Right Reserved.
+            <div class="text-center" style="color:#808069">
+                Copyright &copy2018-2022 电脑菌 All Right Reserved.
                 电脑音乐发布工作室03号网页服务器运行|部分代码由笔稽菌提供<br>
-                <img src="./image/moeicon.png" alt="萌ICP" width="25px" height="25px"><a
-                    href="https://icp.gov.moe/?keyword=20210285" target="_blank">萌ICP备20210285号</a>
+                <img src="./image/moeicon.png" alt="萌ICP" width="25px" height="25px"><a href="https://icp.gov.moe/?keyword=20210285" target="_blank">萌ICP备20210285号</a>
                 <br>
-                <span id="lmao">Powered by <a
-                        href="javascript:$(&#39;#lmao&#39;).html(&#39;Not powered by WordPress,Powered by Dnyyfb&#39;)">W0rdPress</a></span>|<span
-                    id="lmao2">This a <a href="https://www.bilibili.com/video/BV1GJ411x7h7">ilnk</a>
+                <span id="lmao">
+                    Powered by <a href="javascript:$(&#39;#lmao&#39;).html(&#39;Not powered by WordPress,Powered by Dnyyfb&#39;)">W0rdPress</a>
+                </span>|<span id="lmao2">
+                    This a <a href="https://www.bilibili.com/video/BV1GJ411x7h7">ilnk</a>
                 </span>
             </div>
         </div>
