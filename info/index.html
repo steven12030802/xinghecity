@@ -65,25 +65,32 @@
                 <div class="panel-heading">
                     <span>申诉通道</span>
                 </div>
+                <!--服务器状态信息实时显示-->
                 <div class="panel-body">
                     <div class="server-status">
                         My awesome server is currently <span class="server-online"></span>!
                     </div>
 
-                    <script src="https://mcapi.us/scripts/minecraft.min.js"></script>
+                    <script src="./src/js/minecraft.info.js"></script>
                     <script>
                         MinecraftAPI.getServerStatus('play.xinghecity.xyz', {
                             port: 37023 // optional, only if you need a custom port
                         }, function (err, status) {
                             if (err) {
-                                return document.querySelector('.server-status').innerHTML = 'Error loading status';
+                                return document.querySelector('.server-status').innerHTML = '服务器状态加载失败';
                             }
 
                             // you can change these to your own message!
-                            document.querySelector('.server-online').innerHTML = status.online ? 'up' : 'down';
+                            document.querySelector('.server-online').innerHTML = status.online ? '服务器正常运行！' : '服务器已关闭！';
                         });
                     </script>
                     <img src="https://mcapi.us/server/image?ip=play.xinghecity.xyz&port=37023" alt="服务器在线状况图片">
+                    <p>服务器名称：星河城服务器</p><br>
+                    <p>服务器地址：play.xinghecity.xyz:37023</p><br>
+                    <p>服务器服务端：Forge</p><br>
+                    <p>服务器版本：1.19.2整合包</p><br>
+                    <p>服务器属地：甘肃</p>
+
                 </div>
             </div>
             <br>
