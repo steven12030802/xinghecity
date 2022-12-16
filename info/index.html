@@ -68,20 +68,20 @@
                 <!--服务器状态信息实时显示-->
                 <div class="panel-body">
                     <div class="server-status">
-                        My awesome server is currently <span class="server-online"></span>!
+                        服务器状态： <span class="server-online"></span>!
                     </div>
 
-                    <script src="./src/js/minecraft.info.js"></script>
+                    <script src="/src/js/minecraft.min.js"></script>
                     <script>
                         MinecraftAPI.getServerStatus('play.xinghecity.xyz', {
                             port: 37023 // optional, only if you need a custom port
                         }, function (err, status) {
                             if (err) {
-                                return document.querySelector('.server-status').innerHTML = '服务器状态加载失败';
+                                return document.querySelector('.server-status').innerHTML = '状态加载失败';
                             }
 
                             // you can change these to your own message!
-                            document.querySelector('.server-online').innerHTML = status.online ? '服务器正常运行！' : '服务器已关闭！';
+                            document.querySelector('.server-online').innerHTML = status.online ? '正常运行！' : '已关闭！';
                         });
                     </script>
                     <img src="https://mcapi.us/server/image?ip=play.xinghecity.xyz&port=37023" alt="服务器在线状况图片">
