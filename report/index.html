@@ -22,7 +22,7 @@
             <!-- Brand and toggle get grouped for better mobile display -->
             <div class="navbar-header">
                 <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
-                    data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                        data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
                     <span class="sr-only">Toggle navigation</span>
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
@@ -35,12 +35,12 @@
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav">
                     <li><a href="../index.html">主页</a></li>
-                    <li><a href="../subway/index.html">星河城轨道交通</a></li>
+                    <li><a href="../subway/index.html">星河轨道交通</a></li>
                     <li class="active"><a href="../report/index.html">申诉/举报</a></li>
                     <li><a href="../ban/index.html">封禁相关</a></li>
                     <li><a href="https://dnyyfb.github.io/">工作室网站</a></li>
                     <li><a href="https://space.bilibili.com/606741691/">B站首页</a></li>
-                    <li><a href="/jianzhang/index.html">规范守则</a></li>
+                    <li><a href="/regulations/index.html">文档中心</a></li>
                     <li><a href="../announce/index.html">公告</a></li>
                     <li><a href="https://voice.baidu.com/act/newpneumonia/newpneumonia">抗击疫情</a></li>
                     <li><a href="../info/index.html">服务器实时信息</a></li>
@@ -66,18 +66,10 @@
                     <span>申诉通道</span>
                 </div>
                 <div class="panel-body">
-                    <p>星河城是一个公平的Minecraft服务器，如果您被系统误判，请按照下方的格式发送到我们的邮箱向我们申诉，无关信息将会被管理员作屏蔽处理！感谢您的合作！</p>
-                    <p>格式:</p>
-                    <p>主题:申诉 - 星河城服务平台</p>
-                    <p>内容：</p>
-                    <p>服务器编号:#2</p>
-                    <p>您的游戏昵称：</p>
-                    <p>您的xuid：</p>
-                    <p>申诉人身份：（玩家或协管）</p>
-                    <p>申诉类型：（协管误判、封禁系统误判、实际封禁时间超过判定封禁时间等，具体请参见《星河城服务器总规》。）</p>
-                    <p>补充信息：</p>
-                    <p>星河城服务器总规：PDF版</p>
-                    <p>邮箱(点击可直接发送邮件): <a href="mailto:dnyyfbstudio@qq.com">dnyyfbstudio@qq.com</a></p>
+                    <p>
+                        星河城是一个公平的Minecraft服务器，如果您被系统误判，请<a href="https://www.wjx.cn/vm/YDUkRWA.aspx">点击这里</a>向我们申诉，无视频/图片证据或信息不实将会作关闭处理！感谢您的合作！<br>
+                        具体请参见《星河城服务器总规》。
+                    </p>
                 </div>
             </div>
             <br>
@@ -86,7 +78,10 @@
                     <span>举报通道</span>
                 </div>
                 <div class="panel-body">
-                    <p>星河城是一个和谐的Minecraft的服务器，如果您在游戏中发现协管、玩家或者服主做出了违反星河城服务器总规的行为，请按照下方的格式发送到我们的邮箱向我们举报，无关信息将会被管理员作屏蔽处理！感谢您的合作</p>
+                    <p>
+                        星河城是一个和谐的Minecraft的服务器，如果您在游戏中发现协管、玩家或者服主做出了违反《星河城服务器总规》的行为，请<a href="https://www.wjx.cn/vm/PYOvajo.aspx">点击这里</a>向我们举报，无视频/图片证据或信息不实将会作关闭处理！感谢您的合作！<br>
+                        具体请参见《星河城服务器总规》。
+                    </p>
                 </div>
             </div>
         </div>
@@ -95,39 +90,40 @@
     <br>
     <div class="text-center">
         当前时间：<span id="cg">2022/01/01 下午00:00:00</span>
-    <script type="text/javascript">
+        <script type="text/javascript">
             setInterval("cg.innerHTML=new Date().toLocaleString()", 1000);
-    </script>
-    <br>
-    <script type="text/javascript">
-        var t = new Date();//获取当前时间
-        var year = t.getFullYear();//获取当前时间年份
-        var month = t.getMonth() + 1;//获取当前时间月份
-        var day = t.getDate();//获取当前时间日
-        var week = t.getDay() - 1;//获取当前时间星期
-        var arr = new Array("星期一", "星期二", "星期三", "星期四", "星期五", "星期六", "星期日",);
-        //上行是为规划星期的输出
-        //下3行分别获得当前时间的时 分 秒 
-        var hour = t.getHours();
-        var minute = t.getMinutes();
-        var second = t.getSeconds();
-        var nowTime = "您上次刷新的时间：" + year + "/" + month + "/" + day + " " + arr[week] + " " + hour + ((minute < 10) ? ":0" : ":") + minute + ((second < 10) ? ":0" : ":")
-            + second;
-        document.write(nowTime);
-    </script>
+        </script>
+        <br>
+        <script type="text/javascript">
+            var t = new Date();//获取当前时间
+            var year = t.getFullYear();//获取当前时间年份
+            var month = t.getMonth() + 1;//获取当前时间月份
+            var day = t.getDate();//获取当前时间日
+            var week = t.getDay() - 1;//获取当前时间星期
+            var arr = new Array("星期一", "星期二", "星期三", "星期四", "星期五", "星期六", "星期日",);
+            //上行是为规划星期的输出
+            //下3行分别获得当前时间的时 分 秒
+            var hour = t.getHours();
+            var minute = t.getMinutes();
+            var second = t.getSeconds();
+            var nowTime = "您上次刷新的时间：" + year + "/" + month + "/" + day + " " + arr[week] + " " + hour + ((minute < 10) ? ":0" : ":") + minute + ((second < 10) ? ":0" : ":")
+                + second;
+            document.write(nowTime);
+        </script>
     </div>
     <br>
     <!-- 页脚 -->
     <nav class="navbar navbar-default navbar-fixed-bottom">
         <div class="container">
-            <div class="text-center" style="color:#808069">Copyright &copy2018-2022 电脑菌 All Right Reserved.
-                电脑音乐发布工作室03号网页服务器运行|部分代码由笔稽菌提供<br>
-                <img src="../image/moeicon.png" alt="萌ICP" width="25px" height="25px"><a
-                    href="https://icp.gov.moe/?keyword=20210285" target="_blank">萌ICP备20210285号</a>
+            <div class="text-center" style="color:#808069">
+                Copyright &copy2019-2022 星河城工作室 All Right Reserved.
+                幻菌科技云智平台|星河城工作室技术部<br>
+                <img src="../image/moeicon.png" alt="萌ICP" width="25" height="25"><a href="https://icp.gov.moe/?keyword=20210285" target="_blank">萌ICP备20210285号</a>
                 <br>
-                <span id="lmao">Powered by <a
-                        href="javascript:$(&#39;#lmao&#39;).html(&#39;Not powered by WordPress,Powered by Dnyyfb&#39;)">W0rdPress</a></span>|<span
-                    id="lmao2">This a <a href="https://www.bilibili.com/video/BV1GJ411x7h7">ilnk</a>
+                <span id="lmao">
+                    Powered by <a href="javascript:$(&#39;#lmao&#39;).html(&#39;Not powered by WordPress,Powered by XingheCity Studio&#39;)">W0rdPress</a>
+                </span>|<span id="lmao2">
+                    This a <a href="https://www.bilibili.com/video/BV1GJ411x7h7">ilnk</a>
                 </span>
             </div>
         </div>
