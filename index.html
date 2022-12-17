@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <style>
-        @import url('./src/css/bodyck.css')
+        @import url('./src/css/bodyck.css');
     </style>
     <link rel="icon" sizes="82x82" href="./image/favicon.png">
     <title>星河城服务平台</title>
@@ -355,7 +355,7 @@
                     <li><a href="ban/index.html">封禁相关</a></li>
                     <li><a href="https://dnyyfb.github.io/">工作室网站</a></li>
                     <li><a href="https://space.bilibili.com/606741691/">B站首页</a></li>
-                    <li><a href="/jianzhang/index.html">规范守则</a></li>
+                    <li><a href="/regulations/index.html">文档中心</a></li>
                     <li><a href="announce/index.html">公告</a></li>
                     <li><a href="/covid-19/index.html">抗击疫情</a></li>
                     <li><a href="../info/index.html">服务器实时信息</a></li>
@@ -506,9 +506,9 @@
                     port: 37023
                 }, function (err, status) {
                     if (err) {
-                        return document.querySelector('.server-status').innerHTML = '服务器状态加载失败';
+                        return document.querySelector('.server-status').innerHTML = '状态加载失败';
                     }
-                    document.querySelector('.server-online').innerHTML = status.online ? '服务器运行状态正常' : '服务器已关闭';
+                    document.querySelector('.server-online').innerHTML = status.online ? '服务器运行正常' : '服务器已关闭';
                 });
             </script>
             <!-- 服务器状态检测代码结束 -->
@@ -521,12 +521,12 @@
         <nav class="navbar navbar-default navbar-fixed-bottom">
             <div class="container">
                 <div class="text-center" style="color:#808069">
-                    Copyright &copy2018-2022 电脑菌 All Right Reserved.
-                    电脑音乐发布工作室03号网页服务器运行|部分代码由笔稽菌提供<br>
-                    <img src="./image/moeicon.png" alt="萌ICP" width="25px" height="25px"><a href="https://icp.gov.moe/?keyword=20210285" target="_blank">萌ICP备20210285号</a>
+                    Copyright &copy2019-2022 星河城工作室 All Right Reserved.
+                    幻菌科技云智平台|星河城工作室技术部<br>
+                    <img src="./image/moeicon.png" alt="萌ICP" width="25" height="25"><a href="https://icp.gov.moe/?keyword=20210285" target="_blank">萌ICP备20210285号</a>
                     <br>
                     <span id="lmao">
-                        Powered by <a href="javascript:$(&#39;#lmao&#39;).html(&#39;Not powered by WordPress,Powered by Dnyyfb&#39;)">W0rdPress</a>
+                        Powered by <a href="javascript:$(&#39;#lmao&#39;).html(&#39;Not powered by WordPress,Powered by XingheCity Studio&#39;)">W0rdPress</a>
                     </span>|<span id="lmao2">
                         This a <a href="https://www.bilibili.com/video/BV1GJ411x7h7">ilnk</a>
                     </span>
