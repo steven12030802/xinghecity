@@ -23,7 +23,7 @@
 </head>
 
 <body>
-        <script>
+    <!-- <script>
             function clickEffect() {
                 let balls = [];
                 let longPressed = false;
@@ -159,8 +159,8 @@
             }
             clickEffect();
         </script>
-    
-    
+
+
     <script>
         var stop, staticx;
         var img = new Image();
@@ -329,8 +329,7 @@
                 startSakura();
             }
         }
-    </script>
-        
+    </script> -->
     <!-- 导航栏 -->
     <nav class="navbar navbar-default navbar-fixed-top">
         <div class="container-fluid">
@@ -416,123 +415,123 @@
     </style>
     -->
     <!-- 主体 -->
+    <div class="container">
+
+        <div class="row">
+            <div class="text-center">
+                <img src="./image/favicon.png" alt="..." class="img-rounded" style="height: 40px;">
+                <h3 class="title">星河城服务平台</h3>
+            </div>
+        </div>
+        <br>
+
+        <div class="CSSgal">
+
+            <!-- Don't wrap targets in parent -->
+            <s id="s1"></s>
+            <s id="s2"></s>
+            <s id="s3"></s>
+            <s id="s4"></s>
+
+            <div class="slider">
+                <div style="background-image: url(image/xingherail.png);">
+                    <h2>星河轨道交通</h2>
+                    <button type="button" class="btn btn-default" aria-label="Left Align">
+                        <span class="glyphicon glyphicon-align-left" aria-hidden="true"><a href="subway/index.html">详情</a></span>
+                    </button>
+                </div>
+                <div style="background-image: url(image/report.png);">
+                    <h2>申诉/举报</h2>
+                    <button type="button" class="btn btn-default" aria-label="Left Align">
+                        <span class="glyphicon glyphicon-align-left" aria-hidden="true"><a href="report/index.html">详情</a></span>
+                    </button>
+                </div>
+                <div style="background-image: url(image/ban.png);">
+                    <h2>封禁相关</h2>
+                    <button type="button" class="btn btn-default" aria-label="Left Align">
+                        <span class="glyphicon glyphicon-align-left" aria-hidden="true"><a href="ban/index.html">详情</a></span>
+                    </button>
+                </div>
+                <div style="background-image: url(image/xinghecard.png);">
+                    <h2>星河一城通</h2>
+                    <button type="button" class="btn btn-default" aria-label="Left Align">
+                        <span class="glyphicon glyphicon-align-left" aria-hidden="true"><a href="subway/index.html">详情</a></span>
+                    </button>
+                </div>
+            </div>
+            <br>
+            <br>
+            <div class="bullets">
+                <a href="#s1">1</a>
+                <a href="#s2">2</a>
+                <a href="#s3">3</a>
+                <a href="#s4">4</a>
+            </div>
+
+        </div>
+
+    </div>
+    <div class="text-center">
+        当前时间：<span id="cg">2022/01/01 下午00:00:00</span>
+        <script type="text/javascript">
+            setInterval("cg.innerHTML=new Date().toLocaleString()", 1000);
+        </script>
+        <br>
+        <script type="text/javascript">
+            var t = new Date();//获取当前时间
+            var year = t.getFullYear();//获取当前时间年份
+            var month = t.getMonth() + 1;//获取当前时间月份
+            var day = t.getDate();//获取当前时间日
+            var week = t.getDay() - 1;//获取当前时间星期
+            var arr = new Array("星期一", "星期二", "星期三", "星期四", "星期五", "星期六", "星期日",);
+            //上行是为规划星期的输出
+            //下3行分别获得当前时间的时 分 秒
+            var hour = t.getHours();
+            var minute = t.getMinutes();
+            var second = t.getSeconds();
+            var nowTime = "您上次刷新的时间：" + year + "/" + month + "/" + day + " " + arr[week] + " " + hour + ((minute < 10) ? ":0" : ":") + minute + ((second < 10) ? ":0" : ":")
+                + second;
+            document.write(nowTime);
+        </script>
+
+
+        <!-- 服务器状态检测代码开始 -->
+        <div class="server-status">
+            当前服务器状态： <span class="server-online"></span>!
+        </div>
+
+        <script src="/src/js/minecraft.min.js"></script>
+        <script>
+            MinecraftAPI.getServerStatus('play.xinghecity.xyz', {
+                port: 37023
+            }, function (err, status) {
+                if (err) {
+                    return document.querySelector('.server-status').innerHTML = '状态加载失败';
+                }
+                document.querySelector('.server-online').innerHTML = status.online ? '服务器运行正常' : '服务器已关闭';
+            });
+        </script>
+        <!-- 服务器状态检测代码结束 -->
+
+
+    </div>
+
+
+    <!-- 页脚 -->
+    <nav class="navbar navbar-default navbar-fixed-bottom">
         <div class="container">
-
-            <div class="row">
-                <div class="text-center">
-                    <img src="./image/favicon.png" alt="..." class="img-rounded" style="height: 40px;">
-                    <h3 class="title">星河城服务平台</h3>
-                </div>
-            </div>
-            <br>
-
-            <div class="CSSgal">
-
-                <!-- Don't wrap targets in parent -->
-                <s id="s1"></s>
-                <s id="s2"></s>
-                <s id="s3"></s>
-                <s id="s4"></s>
-
-                <div class="slider">
-                    <div style="background-image: url(image/xingherail.png);">
-                        <h2>星河轨道交通</h2>
-                        <button type="button" class="btn btn-default" aria-label="Left Align">
-                            <span class="glyphicon glyphicon-align-left" aria-hidden="true"><a href="subway/index.html">详情</a></span>
-                        </button>
-                    </div>
-                    <div style="background-image: url(image/report.png);">
-                        <h2>申诉/举报</h2>
-                        <button type="button" class="btn btn-default" aria-label="Left Align">
-                            <span class="glyphicon glyphicon-align-left" aria-hidden="true"><a href="report/index.html">详情</a></span>
-                        </button>
-                    </div>
-                    <div style="background-image: url(image/ban.png);">
-                        <h2>封禁相关</h2>
-                        <button type="button" class="btn btn-default" aria-label="Left Align">
-                            <span class="glyphicon glyphicon-align-left" aria-hidden="true"><a href="ban/index.html">详情</a></span>
-                        </button>
-                    </div>
-                    <div style="background-image: url(image/xinghecard.png);">
-                        <h2>星河一城通</h2>
-                        <button type="button" class="btn btn-default" aria-label="Left Align">
-                            <span class="glyphicon glyphicon-align-left" aria-hidden="true"><a href="subway/index.html">详情</a></span>
-                        </button>
-                    </div>
-                </div>
+            <div class="text-center" style="color:#808069">
+                Copyright &copy2019-2022 星河城工作室 All Right Reserved.
+                幻菌科技云智平台|星河城工作室技术部<br>
+                <img src="./image/moeicon.png" alt="萌ICP" width="25" height="25"><a href="https://icp.gov.moe/?keyword=20229885" target="_blank">萌ICP备20229885号</a>
                 <br>
-                <br>
-                <div class="bullets">
-                    <a href="#s1">1</a>
-                    <a href="#s2">2</a>
-                    <a href="#s3">3</a>
-                    <a href="#s4">4</a>
-                </div>
-
+                <span id="lmao">
+                    Powered by <a href="javascript:$(&#39;#lmao&#39;).html(&#39;Not powered by WordPress,Powered by XingheCity Studio&#39;)">W0rdPress</a>
+                </span>|<span id="lmao2">
+                    This a <a href="https://www.bilibili.com/video/BV1GJ411x7h7">ilnk</a>
+                </span>
             </div>
-
         </div>
-        <div class="text-center">
-            当前时间：<span id="cg">2022/01/01 下午00:00:00</span>
-            <script type="text/javascript">
-                setInterval("cg.innerHTML=new Date().toLocaleString()", 1000);
-            </script>
-            <br>
-            <script type="text/javascript">
-                var t = new Date();//获取当前时间
-                var year = t.getFullYear();//获取当前时间年份
-                var month = t.getMonth() + 1;//获取当前时间月份
-                var day = t.getDate();//获取当前时间日
-                var week = t.getDay() - 1;//获取当前时间星期
-                var arr = new Array("星期一", "星期二", "星期三", "星期四", "星期五", "星期六", "星期日",);
-                //上行是为规划星期的输出
-                //下3行分别获得当前时间的时 分 秒
-                var hour = t.getHours();
-                var minute = t.getMinutes();
-                var second = t.getSeconds();
-                var nowTime = "您上次刷新的时间：" + year + "/" + month + "/" + day + " " + arr[week] + " " + hour + ((minute < 10) ? ":0" : ":") + minute + ((second < 10) ? ":0" : ":")
-                    + second;
-                document.write(nowTime);
-            </script>
-
-
-            <!-- 服务器状态检测代码开始 -->
-            <div class="server-status">
-                当前服务器状态： <span class="server-online"></span>!
-            </div>
-
-            <script src="/src/js/minecraft.min.js"></script>
-            <script>
-                MinecraftAPI.getServerStatus('play.xinghecity.xyz', {
-                    port: 37023
-                }, function (err, status) {
-                    if (err) {
-                        return document.querySelector('.server-status').innerHTML = '状态加载失败';
-                    }
-                    document.querySelector('.server-online').innerHTML = status.online ? '服务器运行正常' : '服务器已关闭';
-                });
-            </script>
-            <!-- 服务器状态检测代码结束 -->
-
-
-        </div>
-
-
-        <!-- 页脚 -->
-        <nav class="navbar navbar-default navbar-fixed-bottom">
-            <div class="container">
-                <div class="text-center" style="color:#808069">
-                    Copyright &copy2019-2022 星河城工作室 All Right Reserved.
-                    幻菌科技云智平台|星河城工作室技术部<br>
-                    <img src="./image/moeicon.png" alt="萌ICP" width="25" height="25"><a href="https://icp.gov.moe/?keyword=20229885" target="_blank">萌ICP备20229885号</a>
-                    <br>
-                    <span id="lmao">
-                        Powered by <a href="javascript:$(&#39;#lmao&#39;).html(&#39;Not powered by WordPress,Powered by XingheCity Studio&#39;)">W0rdPress</a>
-                    </span>|<span id="lmao2">
-                        This a <a href="https://www.bilibili.com/video/BV1GJ411x7h7">ilnk</a>
-                    </span>
-                </div>
-            </div>
-        </nav>
+    </nav>
 </body>
 </html>
