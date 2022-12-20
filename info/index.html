@@ -371,12 +371,12 @@
         <div class="">
             <div class="panel panel-default">
                 <div class="panel-heading">
-                    <span>申诉通道</span>
+                    <span>服务器实时信息</span>
                 </div>
                 <!--服务器状态信息实时显示-->
                 <div class="panel-body">
                     <div class="server-status">
-                        当前服务器状态： <span class="server-online"></span>!
+                        服务器当前状态： <span class="server-online"></span>!
                     </div>
 
                     <script src="/src/js/minecraft.min.js"></script>
@@ -385,11 +385,11 @@
                             port: 37023 // optional, only if you need a custom port
                         }, function (err, status) {
                             if (err) {
-                                return document.querySelector('.server-status').innerHTML = '状态加载失败';
+                                return document.querySelector('.server-status').innerHTML = '加载失败，请将此状况报告技术部';
                             }
 
                             // you can change these to your own message!
-                            document.querySelector('.server-online').innerHTML = status.online ? '服务器运行正常!' : '服务器已关闭!';
+                            document.querySelector('.server-online').innerHTML = status.online ? '运行正常!' : '已关闭!';
                         });
                     </script>
                     <img src="https://mcapi.us/server/image?ip=play.xinghecity.xyz&port=37023" alt="服务器在线状况图片">
