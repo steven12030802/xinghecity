@@ -323,7 +323,7 @@
             }
         }
     </script>
-    -->
+        -->
     <!-- 导航栏 -->
     <nav class="navbar navbar-default navbar-fixed-top">
         <div class="container-fluid">
@@ -348,8 +348,8 @@
                     <li><a href="../ban/index.html">封禁相关</a></li>
                     <li><a href="../regulations/index.html">文档中心</a></li>
                     <li><a href="../announce/index.html">公告</a></li>
-                    <li class="active"><a href="../info/index.html">服务器实时信息</a></li>
-                    <li><a href="../links/index.html">链接</a></li>
+                    <li><a href="../info/index.html">服务器实时信息</a></li>
+                    <li class="active"><a href="../links/index.html">链接</a></li>
                     <li><a href="https://voice.baidu.com/act/newpneumonia/newpneumonia">抗击疫情</a></li>
                     <li><a href="https://live.bilibili.com/22795761/">开服在即</a></li>
                 </ul>
@@ -367,48 +367,17 @@
             </div>
         </div>
         <br>
-        <div class="">
-            <div class="panel panel-default">
-                <div class="panel-heading">
-                    <span>服务器实时信息</span>
-                </div>
-                <!--服务器状态信息实时显示-->
-                <div class="panel-body">
-                    <div class="server-status">
-                        服务器当前状态： <span class="server-online"></span>!<br>
-                    </div>
-
-                    <script src="/src/js/minecraft.min.js"></script>
-                    <script>
-                        MinecraftAPI.getServerStatus('play.xinghecity.xyz', {
-                            port: 37023 // optional, only if you need a custom port
-                        }, function (err, status) {
-                            if (err) {
-                                return document.querySelector('.server-status').innerHTML = '加载失败，请将此状况报告技术部';
-                            }
-
-                            // you can change these to your own message!
-                            document.querySelector('.server-online').innerHTML = status.online ? '运行正常!' : '已关闭!';
-                        });
-                    </script>
-                    <img src="https://mcapi.us/server/image?ip=play.xinghecity.xyz&port=37023" alt="服务器在线状况图片"><br>
-                    <a href="https://stats.uptimerobot.com/BQLnrFVjpw">服务器状态查询</a><br>
-                    <p>服务器名称：星河城服务器</p><br>
-                    <p>服务器地址：play.xinghecity.xyz:37023</p><br>
-                    <p>服务器服务端：Java-Forge</p><br>
-                    <p>服务器版本：1.19.2（整合包）</p><br>
-                    <p>服务器实际属地：甘肃</p>
-
-                </div>
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                链接
             </div>
-            <br>
-            <div class="panel panel-default">
-                <div class="panel-heading">
-                    <span>星河城服务平台制作&维护人员名单</span>
-                </div>
-                <div class="panel-body">
-                    <p>PC_Jun、mrBlack、eRicky</p>
-                </div>
+            <div class="panel-body">
+                <div class="text-center"><a href="http://smap.xinghecity.xyz:58888/index.html">星河轨道交通动态线路图</a></div><br>
+                <div class="text-center"><a href="https://blog.xinghecity.xyz/">星河城服务器博客</a></div><br>
+                <div class="text-center"><a href="https://space.bilibili.com/606741691">官方哔哩哔哩</a></div><br>
+                <div class="text-center"><a href="https://space.bilibili.com/3461566917773881">测试组哔哩哔哩</a></div><br>
+                <div class="text-center"><a href="https://stats.uptimerobot.com/BQLnrFVjpw">服务器状态查询</a></div><br>
+                <div class="text-center"><a href="https://afdian.net/a/xinghecity">爱发电捐赠</a></div><br>
             </div>
         </div>
     </div>
@@ -437,7 +406,7 @@
             document.write(nowTime);
         </script>
     </div>
-    <br>
+
     <!-- 页脚 -->
     <nav class="navbar navbar-default navbar-fixed-bottom">
         <div class="container">
