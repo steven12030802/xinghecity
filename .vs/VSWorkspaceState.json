@@ -1,8 +1,14 @@
 {
   "ExpandedNodes": [
     "",
+    "\\announce",
+    "\\ban",
+    "\\info",
     "\\links",
+    "\\regulations",
+    "\\report",
     "\\subway"
   ],
+  "SelectedNode": "\\image",
   "PreviewInSolutionExplorer": false
 }
