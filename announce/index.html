@@ -62,7 +62,10 @@
                 公告栏
             </div>
             <div class="panel-body">
-                <p>这里暂时没有公告，您可以注意玩家群及公众号消息。</p>
+            <p><div id="info"></div>
+            <script type="text/javascript">
+            $("#info").load("https://api.xinghecity.xyz:55656/announcement.html");
+            </script></p>
             </div>
 
         </div>
