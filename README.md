@@ -3,4 +3,4 @@
 链接：https://xinghecity.xyz/ <br>
 基于旧版代码[ https://github.com/xinghecity/xinghecity.github.io/ ]重构<br>
 使用 http://mcapi.us/ api接口实现服务器实时信息刷新<br>
-星河城工作室开发部|幻菌科技云舟智慧服务|幻菌科技数据中心 · 嘉峪关
+星河城工作室开发部|幻菌科技方舟智慧服务|幻菌科技数据中心 · 嘉峪关
